@@ -1,5 +1,6 @@
 # DATA-SCIENCE-CHEATSHEET
 a collection of notes on data manipulation / analysis python functions i personally use most often, with examples (because i keep forgetting them) :) gathered from my internship and courses
+
 [ images made by me in figma ]
 
 <br>
