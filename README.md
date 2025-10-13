@@ -12,3 +12,4 @@ Basically a placeholder for my notes on compsci topics that interest me and I wa
 ### Todo
 - [ ] link names and division for topics in resources
 - [ ] KMP algo
+- [ ] upload files from previous years
