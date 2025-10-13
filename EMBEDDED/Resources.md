@@ -1,0 +1,6 @@
+- https://www.youtube.com/watch?v=DPqiIzK97K0
+- https://youtube.com/playlist?list=PLb_Q-Ps0nJovFwx781G_BXDC_dkJrWeA7&si=NZ81L8kq35wsAZNA
+- https://youtube.com/playlist?list=PL2z3V9RkHQE3E0sJBjmK6z_ixxuve5Sao&si=f6f0jfRVKbDMfngr
+- https://youtube.com/playlist?list=PLNx89373hpKVb3tMPfRMUjmYNkkXohRv9&si=Ll_oAlL7u30Ru1VQ
+- https://youtube.com/playlist?list=PLfqABt5AS4FmErobw8YyTwXDUE5nPH5lH&si=U3y_ZG96Mwxc_uzA
+- https://youtube.com/playlist?list=PLWv9VM947MKi_7yJ0_FCfzTBXpQU-Qd3K&si=JnzqlChCR-2ByHOK
