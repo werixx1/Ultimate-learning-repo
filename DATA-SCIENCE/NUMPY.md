@@ -14,7 +14,7 @@
             [2, 5],
             [3, 6]]) 
       ```
-      ![hstack](./imgs/hstack_example.png)
+      ![hstack](../imgs/hstack_example.png)
 <br>
 
 2. np.**vstack**(*sequence_of_ndarrays, dtype=None, casting='same_kind'*)
@@ -31,4 +31,4 @@
       array([[1, 2, 3],
             [4, 5, 6]])
       ```
-      ![vstack](./imgs/vstack_example.png)
+      ![vstack](../imgs/vstack_example.png)
