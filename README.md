@@ -1,6 +1,6 @@
 # Ultimate learning repo 💻</>
 
-<img src="./imgs/decor.gif" align="right" width="250" height="150">
+<img src="./imgs/decor.gif" align="right" width="350" height="250">
 
 Basically a placeholder for my notes on compsci topics that interest me and I want to pursue with resources to tutorials, courses, lectures etc to keep track on them:)
 
