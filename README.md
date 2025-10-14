@@ -7,6 +7,6 @@ Basically a placeholder for my notes on compsci topics that interest me and I wa
 * Random snippets of polish occur :p
 ##
 ### Todo
-- [ ] link names and division for topics in resources
+- [x] link names and division for topics in resources
 - [ ] KMP algo
 - [ ] upload files from previous years
