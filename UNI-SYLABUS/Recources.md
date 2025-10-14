@@ -1,1 +1,3 @@
 - https://www.youtube.com/watch?v=B31LgI4Y4DQ&list=PLNkeEJ-A8bAem3jPktBpoWMjRACCEK7t1&index=71
+- https://www.geeksforgeeks.org/android/android-studio-tutorial/ <- best tuto for androidn studio 
+- https://www.homeandlearn.co.uk/android/first_android_project.html andr
