@@ -1,0 +1,1 @@
+"You count **discrete** data. You measure **continuous** data"

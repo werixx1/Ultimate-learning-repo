@@ -1,4 +1,4 @@
-#### Functions for preparing data cheatsheet
+#### Functions for preparing data 
 
 1. Datastore = variable for storing multiple images
 ```matlab
@@ -66,3 +66,86 @@ minibatchpredict
 ```
 
 Conv layer extract certain patterns (features), usually each conv layer in a bigger network has a different filter for detecting different things like ex. hertical edges, horizontal edges, whites etc
+
+---
+
+#### Training a network from 'scratch' (by matlab standards)
+[ Setup for Experiment manager .mat (Setup Function) ] 
+- In Expirement Manager:
+![matlab_1](../imgs/MATLAB_1.png)
+^generates a script to define training data, layers and training options
+- Adjusting hyperparameters:
+![matlab_2](../imgs/MATLAB_2.png)
+And call them in setup by:
+    ```matlab
+    params.myInitialLearnRate
+    params.myEpochs
+    ```
+---
+1. Function that loads defined params into training (it generated automatically)
+```matlab
+function [xTrain,yTrain,layers,options] =
+Expirement_setup1(params) % has all parameters from below
+% to load into experiment manager ? i think ?
+```
+2. Loading training data (expecting its already divided into train/test):
+```matlab
+data = load("file_name.mat");
+yTrain = data.yTrain;
+yTest = data.yTest;
+% numer - num of array elements (len())
+xTrain = reshape(data.xTrain, 28,28,1, numel(yTrain));
+% reshaping so it matches network input layer
+xTest = reshape(data.xTest, 28,28,1, numel(yTest));
+% for images = imresize()
+```
+[Train\test\val for labeled data]
+```matlab
+idx = splitlabels(labels,[0.9,0.05]) % train test val split
+```
+3. Defining network architecture
+```matlab
+layers = [
+imageInputLayer([28 28 1])
+convolution2dLayer(3,8,"Padding","same")
+batchNormalizationLayer
+reluLayer
+% etc
+]
+```
+4. Specyfying training options
+```matlab
+options = trainingOptions("adam", ...
+"InitialLearnRate",params.myInitialLearnRate,...
+"MaxEpochs",params.myEpochs, ...
+"ValidationData",{xTest yTest}, ...
+"ValidationFrequency",200,...
+"Shuffle","every-epoch",...
+"Verbose",false);
+end
+```
+---
+- Inserting object box annotation (images detecting)
+    ```matlab
+    img_with_box = insertObjectAnnotation(image,...
+    "rectangle",box_coordinates,label)
+    % create a datastore of box labels
+    ds_of_boxes = boxLabelDatastore(table)
+    ```
+    ![alt text](../imgs/MATLAB_3.png)
+    (labels are 4 and 6)
+
+- Using function as a parameter to another function
+    ```matlab
+    @function % use function in a function as a parameter
+    ```
+- Signal data
+    ```matlab
+    sigds = signalDatastore("file_path", "IncludeSubfolders",true, ...
+    "SignalVariableNames", varnames, ...
+    "ReadOutputOrientation", "row") % datastore storing signal data
+    labels = folders2labels("folder_name"); % categorical vector
+    summary(labels); % get how many examples of each label there are
+    % ??
+    lbls = renamecats(lbls,["class1" "class2"])
+    ```
