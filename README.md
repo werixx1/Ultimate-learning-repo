@@ -1,4 +1,4 @@
-<img src="./imgs/decor.gif" align="right" width="330" height="230">
+<img src="imgs/decor.jpg" align="right" width="330" height="230">
 
 # Ultimate learning repo 💻</>
 Basically a placeholder for my notes on compsci topics that interest me and I want to pursue with resources to tutorials, courses, lectures etc to keep track on them:)
