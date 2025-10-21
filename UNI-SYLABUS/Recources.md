@@ -7,3 +7,8 @@
 ### ANDROID STUDIO
 - [Amazing tuto for learning Android Studio (GeeksforGeeks)](https://www.geeksforgeeks.org/android/android-studio-tutorial/) 
 - [Another android studio tutorial](https://www.homeandlearn.co.uk/android/first_android_project.html)
+- [Handling multiple buttons](https://stackoverflow.com/questions/25905086/multiple-buttons-onclicklistener-android)
+
+
+
+andst: todo linear layouts etc explained
