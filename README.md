@@ -1,16 +1,29 @@
-<img src="imgs/decor.jpg" align="right" width="330" height="230">
 
-# Ultimate learning repo 💻</>
-Basically a placeholder for my notes on compsci topics that interest me and I want to pursue with resources to tutorials, courses, lectures etc to keep track on them:)
-* Each topic folder contains a Resources markdown file with all useful links on covered topics 
-* All images are created by me in Figma (imgs folder)
-* Random snippets of polish occur :p
+<div align="center">
+    <img src="imgs/decor.jpg"  width="330" height="230">
+  </a>
+  
+  <h3 align="center">Ultimate learning repo</h3>
+  <p align="center">
+    Basically a placeholder for my notes on compsci / tech topics that interest me and I want to pursue with resources to tutorials, courses, lectures etc to keep track on them:)
+  </p>
+</div>
+   <ul>
+  <li>Each topic folder contains a Resources markdown file with all useful links on covered topics </li>
+  <li>All images are created by me in Figma (imgs folder)</li>
+  <li>its mostly ponglish :p</li>
+</ul> 
 
-#### Interests overlap chart
-<img src="imgs/correlations_chart.png" align="center" width="620" height="350">
+---
+<h3 align="center">Interests overlap chart</h3>
+
+<div align="center">
+    <img src="imgs/correlations_chart.png"  width="620" height="350">
+  </a>
+</div>
 
 ---
 ### Todo
 - [x] link names and division for topics in resources
-- [ ] KMP algo
+- [x] KMP algo
 - [ ] upload files from previous years
