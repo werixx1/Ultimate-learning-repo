@@ -1,9 +1,9 @@
 
 <div align="center">
-    <img src="imgs/decor.jpg"  width="330" height="230">
+    <img src="imgs/decor.png"  width="219" height="217">
   </a>
   
-  <h3 align="center">Ultimate learning repo</h3>
+  <h3 align="center">Ultimate-learning-repo</h3>
   <p align="center">
     Basically a placeholder for my notes on compsci / tech topics that interest me and I want to pursue with resources to tutorials, courses, lectures etc to keep track on them:)
   </p>
