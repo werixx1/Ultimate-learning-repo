@@ -18,7 +18,7 @@
 <h3 align="center">Interests overlap chart</h3>
 
 <div align="center">
-    <img src="imgs/correlations_chart.png"  width="620" height="350">
+    <img src="imgs/interests.png"  width="620" height="350">
   </a>
 </div>
 
