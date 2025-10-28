@@ -3,6 +3,7 @@
 - [(PLAYLIST) Electronics For Beginners Video Series](https://youtube.com/playlist?list=PL2z3V9RkHQE3E0sJBjmK6z_ixxuve5Sao&si=f6f0jfRVKbDMfngr)
 - [(PLAYLIST) Practical Electronics Course](https://youtube.com/playlist?list=PLNx89373hpKVb3tMPfRMUjmYNkkXohRv9&si=Ll_oAlL7u30Ru1VQ)
 - [Books](https://old.reddit.com/r/AskElectronics/wiki/education#wiki_books_worth_reading)
+- [Book basics](https://www.allaboutcircuits.com/textbook/)
 ---
 ### EMBEDDED / FIRMWARE 
 - [(YT COURSE) Arduino Course](https://www.youtube.com/watch?v=DPqiIzK97K0)
