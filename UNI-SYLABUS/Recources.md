@@ -3,6 +3,7 @@
 ### ALGORITHMS AND DATA STRUCTURES
 - [(YT COURSE) Data Structures - Full Course Using C and C++](https://www.youtube.com/watch?v=B31LgI4Y4DQ&list=PLNkeEJ-A8bAem3jPktBpoWMjRACCEK7t1&index=71)
 - [Big-O cheatsheet with visualisation](https://www.bigocheatsheet.com/)
+https://medium.com/@sula.ranawake/calculating-boyer-moore-bad-character-table-with-examples-d855e04d5bd8
 ---
 ### ANDROID STUDIO
 - [Amazing tuto for learning Android Studio (GeeksforGeeks)](https://www.geeksforgeeks.org/android/android-studio-tutorial/) 

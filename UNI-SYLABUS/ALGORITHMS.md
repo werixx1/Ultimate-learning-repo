@@ -71,3 +71,14 @@ def search(text, pattern):
             print(i - j)
             j = ps[j - 1]
 ```
+# LAB_3
+---
+#### Boyer Moore
+Overview:
+![alt text](../imgs/ALG_4.png)
+ ```Value(T) = max (1, 4–3–1) = max (1, 0) = 1 <= update the T value <= Rightmost occurrence of T```
+ >"*If the same character repeats, update the table by the values from the new character (or simply consider the rightmost occurrence of the character in the pattern and calculate the value for it)*"
+ - jak znak pojawia się poźniej jeszcze raz we wzorcu to wzór na tablice to L($) = max{1, m - **index_gdzie_znowu_sie_pojawia** -1}
+ np. dla **T**EST to L(**T**) = max{1, 4-3-1} = 1
+ ![alt text](../imgs/ALG_5.jpg)
+ (I = 1)

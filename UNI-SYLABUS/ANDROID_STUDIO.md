@@ -103,3 +103,8 @@
         }
     }
     ```
+
+# LAB 3
+---
+- Intencje =  żąda akcji od innego składnika aplikacji, np otwarce google maps
+działanie do wykonania (ACTION_VIEW, ACTION_EDIT, ACTION_MAIN)
