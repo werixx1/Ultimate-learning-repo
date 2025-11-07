@@ -1,5 +1,5 @@
-[ usefull functions / tricks :] ]
-1. **enumerate**(*iterable*)
+[ usefull functions / operations :] ]
+1. **enumerate** (*iterable*)
       - adds a counter (index, starting from 0) to each item in a list or any other iterable [usefull when indexing through dictionares and needing locations of certain keys]
       
       In:
@@ -40,14 +40,14 @@
       ```
 <br>
 
-3. **skip** a certain value while iterating using **range()** function
+3. **Skip** a certain value while iterating using **range()** function
       - ex. print anything but 50
       ```python
       for i in [x for x in range(100) if x != 50]:
         print(i)
       ```
 
-4. get value from dictionary by it's index
+4. Get value from **dictionary** by it's **index**
       ```python
       my_dict = { 'val1': 1,
                   'val2': 2,
@@ -55,4 +55,28 @@
 
       first_value = list(iter(my_dict.values()))[0]
       second_value = list(iter(my_dict.values()))[1]
+      ```
+
+5. Finding **PyTorch model size**
+      ```python
+      param_size = 0
+      for param in model.parameters():
+      param_size += param.nelement() * param.element_size()
+      buffer_size = 0
+      for buffer in model.buffers():
+      buffer_size += buffer.nelement() * buffer.element_size()
+
+      size_all_mb = (param_size + buffer_size) / 1024**2
+      print(f'Model size: {size_all_mb} MB')
+      ```
+6. **Operate** on all images in a **folder** (example - resizing)
+      ```python
+      from PIL import Image
+
+      def resize_images(folder_path, dim1, dim2):
+      image_paths = get_image_paths(folder_path=folder_path)
+      for image_path in image_paths:
+                  image = Image.open(image_path)
+                  image = image.resize((dim1, dim2), Image.Resampling.LANCZOS)
+                  image.save(image_path) 
       ```

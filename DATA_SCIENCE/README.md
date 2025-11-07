@@ -1,24 +1,26 @@
 ### PYTHON
-- 📚 [Best book on python:D ](https://automatetheboringstuff.com/)
-todo
-- [Finding Pytorch model size](https://discuss.pytorch.org/t/finding-model-size/130275/2)
-- [Resize all images in a folder](https://stackoverflow.com/questions/21517879/python-pil-resize-all-images-in-a-folder)
----
+Resource | Type | Time | About | Watched/Read
+:-- | :--: | :--: | :--: | :--:
+📚 [Best book on python:D ](https://automatetheboringstuff.com/) | Book | - | Speed up daily tasks with python, best code practices, many examples  | ❌
+
 ### MACHINE LEARNING
-- 🎬[(YT COURSE) PyTorch for Deep Learning](https://youtu.be/V_xro1bcAuA?si=agV7-F-Bu8SRVNMc)
-- 🎬[(YT) Amazing channel on machine learning and math](https://www.youtube.com/@3blue1brown)
-- 📚[(POLISH) Best explanations for complex topics with visualisations](https://miroslawmamczur.pl/spis-tresci/)
-- 📚[(POLISH) Blog about machine learning](https://ksopyla.com/machine-learning/)
-- 🌐[ML on Embedded and Mobile](https://expertbeacon.com/how-to-deploy-machine-learning-models-on-mobile-and-embedded-devices/)
-- 🌐[LiteRT for microcontrollers](https://statics.teams.cdn.office.net/evergreen-assets/safelinks/2/atp-safelinks.html)
-- 📚[LSTMs explained](https://medium.com/analytics-vidhya/lstms-explained-a-complete-technically-accurate-conceptual-guide-with-keras-2a650327e8f2)
-- 📚[Website for learning ML](https://nulldog.com/)
-- [Time series analysis](https://www.youtube.com/watch?v=FPM6it4v8MY)
-- [Smartphone Gait Data for Flooding Level Classification](https://ieee-dataport.org/documents/smartphone-gait-data-flooding-level-classification)
----
+Resource | Type | Time | About | Watched/Read 
+:-- | :--: | :--: | :--: | :--:
+🎬[(YT COURSE) PyTorch for Deep Learning](https://youtu.be/V_xro1bcAuA?si=agV7-F-Bu8SRVNMc) | Youtube Course | 25h | All PyTorch topics covered | 🔄
+🎬[(YT) Amazing channel on machine learning and math](https://www.youtube.com/@3blue1brown) | Youtube Channel | - | Visual explanation of difficult math concepts | -
+📚[(POLISH) Best explanations for complex topics with visualisations](https://miroslawmamczur.pl/spis-tresci/) | Blog | - | Theory and code explanation | -
+📚[(POLISH) Blog about machine learning](https://ksopyla.com/machine-learning/) | Blog | - | Self explanatory | -
+🌐[ML on Embedded and Mobile](https://expertbeacon.com/how-to-deploy-machine-learning-models-on-mobile-and-embedded-devices/) | Web tutorial | - | Keras to TFLite | ✅
+📚[LSTMs explained](https://medium.com/analytics-vidhya/lstms-explained-a-complete-technically-accurate-conceptual-guide-with-keras-2a650327e8f2) | Article | - | Theory behind LSTMs | ❌
+📚[Website for learning ML](https://nulldog.com/) | Blog | - | Code tutorials on many languages and frameworks | - 
+🎬[Stanford Time series analysis in R](https://www.youtube.com/watch?v=FPM6it4v8MY) | Youtube Course | 5h | Math behind predictive models, implementation in R | ❌
+
 
 ### STATISTICS
-- 🌐[(POLISH) Amazing website on statistic topics](https://www.statsoft.pl/textbook/stathome.html)
-- 🎬[(YT COURSE) Data Analysis with Python](https://www.youtube.com/watch?v=r-uOLxNrNk8&list=PLNkeEJ-A8bAd8eQ0o2AqS0B6FGEmu6qjX)
-- 🌐[(WEB COURSE) Statistic and probability](https://www.khanacademy.org/math/statistics-probability)
-- 🎬[Autocorrelation vs Partial autocorrelation](https://www.youtube.com/watch?v=DeORzP0go5I&t=10s)
+Resource | Type | Time | About | Watched/Read
+:-- | :--: | :--: | :--: | :--:
+🌐[(POLISH) Amazing website on statistic topics](https://www.statsoft.pl/textbook/stathome.html) | Blog | - | Understading statistics, math, visualisation | -
+🎬[(YT COURSE) Data Analysis with Python](https://www.youtube.com/watch?v=r-uOLxNrNk8&list=PLNkeEJ-A8bAd8eQ0o2AqS0B6FGEmu6qjX) | Youtube Course | 5h | Tutorial on Numpy, Pandas, Matplotlib, Seaborn | ❌
+🌐[(WEB COURSE) Statistic and probability](https://www.khanacademy.org/math/statistics-probability) | Web Course | - | Khan Academy course on statistics | ❌
+🎬[Autocorrelation vs Partial autocorrelation](https://www.youtube.com/watch?v=DeORzP0go5I&t=10s) | Youtube Video | 15min | Great visual explanation on ACF and PACF | ✅
+

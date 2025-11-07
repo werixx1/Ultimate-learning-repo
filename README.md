@@ -22,7 +22,7 @@
       <ul> 
         <li> 🎬- video tutorial
         <li> 🌐- website tutorial
-        <li> 📚 - book / article
+        <li> 📚- book / article
       </ul>
 </ul> 
 

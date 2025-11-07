@@ -1,4 +1,6 @@
 ### AWS
-- 🎬[AWS full course](https://www.youtube.com/watch?v=YqWuL3an-5o&t=1s)
-- 📚 [Top AWS Certifications Ranked by Difficulty Level](https://www.newhorizons.com/resources/blog/aws-certification-difficulty-ranking)
-- 🌐 [Create free AWS account](https://www.geeksforgeeks.org/devops/amazon-web-services-aws-free-tier-account-set-up/)
+Resource | Type | Time | About | Watched/Read
+:-- | :--: | :--: | :--: | :--: 
+🎬[AWS full course](https://www.youtube.com/watch?v=YqWuL3an-5o&t=1s) | Youtube Course | 10h | Preparation for AWS Certified Cloud Practioner | ❌
+📚 [Top AWS Certifications Ranked by Difficulty Level](https://www.newhorizons.com/resources/blog/aws-certification-difficulty-ranking) | Blog | - | Self explanatory | ✅
+🌐 [Create free AWS account](https://www.geeksforgeeks.org/devops/amazon-web-services-aws-free-tier-account-set-up/) | Web tutorial | 10min | How to create AWS account | ✅
