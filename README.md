@@ -1,5 +1,4 @@
-
-<code>
+<!--
 <p align="center">
 <img src="imgs/album_cover.png" alt="album cover" width="70" height="70" align="center">
 </p>
@@ -9,8 +8,7 @@
 <p align="center">
 <img src="/imgs/audio_an.gif" alt="audio vis" width="100" height="50" align="center">
 </p>
-
-
+-->
 <h3 align="center">ULTIMATE-LEARNING-REPO</h3>
   <p align="center">
     Basically a placeholder for my notes on compsci / tech topics that interest me and I want to pursue with resources to tutorials, courses, lectures etc to keep track on them:)
@@ -43,5 +41,3 @@
 - [x] link names and division for topics in resources
 - [x] KMP algo
 - [ ] upload files from previous years
-
-</code>
