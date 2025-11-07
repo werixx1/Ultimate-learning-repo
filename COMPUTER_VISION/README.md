@@ -1,0 +1,7 @@
+- 🎬[(YT COURSE) Stanford CS231N Deep Learning for Computer Vision](https://www.youtube.com/playlist?list=PLoROMvodv4rOmsNzYBMe0gJY2XS8AQg16)
+- 📚 [Convolution explained](https://jiselectric.github.io/posts/Convolution/)
+- 📚 [CNN explained visually](https://setosa.io/ev/image-kernels/)
+- 📚 [Convolution explained visually](https://jiselectric.github.io/posts/Convolution/)
+- 🎬[(YT COURSE) MIT CNN youtube](https://www.youtube.com/watch?v=oGpzWAlP5p0)
+- 📚[CNNs explained simply](https://www.youtube.com/watch?v=m0fmBY4t5BI)
+- 🌐[Convolutional Neural Network Tutorial (CNN) | How CNN Works | Deep Learning Tutorial |](https://www.youtube.com/watch?v=Jy9-aGMB_TE&t=3s)

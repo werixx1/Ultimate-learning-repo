@@ -1,3 +1,5 @@
+
+---
 # LAB 2 
 ---
 #### KMP algorithm
@@ -71,6 +73,7 @@ def search(text, pattern):
             print(i - j)
             j = ps[j - 1]
 ```
+---
 # LAB_3
 ---
 #### Boyer Moore
@@ -82,3 +85,7 @@ Overview:
  np. dla **T**EST to L(**T**) = max{1, 4-3-1} = 1
  ![alt text](../imgs/ALG_5.jpg)
  (I = 1)
+
+---
+# LAB 4
+---

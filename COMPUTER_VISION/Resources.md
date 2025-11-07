@@ -1,1 +1,0 @@
-- [(YT COURSE) Stanford CS231N Deep Learning for Computer Vision](https://www.youtube.com/playlist?list=PLoROMvodv4rOmsNzYBMe0gJY2XS8AQg16)
