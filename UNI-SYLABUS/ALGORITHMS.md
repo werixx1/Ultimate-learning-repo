@@ -89,3 +89,6 @@ Overview:
 ---
 # LAB 4
 ---
+#### Rabin-Karp Algorithm
+Overview:
+![alt text](../imgs/ALG_6.png)
