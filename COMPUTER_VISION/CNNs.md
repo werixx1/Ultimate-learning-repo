@@ -23,3 +23,12 @@
 ---
 - **Summary**:
     ![summary](../imgs/CV_6.png)
+
+---
+🔹 What is Normalization?
+
+Normalization scales pixel values to a consistent range — most commonly [0, 1] or [-1, 1]. This improves model convergence, helps gradients behave, and often results in better accuracy.
+🔸 Why Normalize
+    Prevents one feature (pixel intensity) from dominating others
+    Reduces training time
+    Makes models numerically stable
