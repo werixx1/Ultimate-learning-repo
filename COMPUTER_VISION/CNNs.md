@@ -4,7 +4,6 @@
 - **Convolution** = procedure when you slide **kernel** on image to extract it's characteristic features (resulting matrix is called **feature map**), to get feature map values you multiply overlapping values at each position 
 ![convolution](../imgs/CV_1.gif)
 ![conv_math](../imgs/CV_3.png)
-  - Math formula: 
     ![math_convolution](../imgs/CV_8.png)
     ![example](../imgs/CV_9.png)
 <!-- ![conv_func](../imgs/CV_7.png) -->
