@@ -1,4 +1,5 @@
 "You count **discrete** data. You measure **continuous** data"
+![data-type](../imgs/RANDOM_1.png)
 
 --- 
 ### ML pipeline:
@@ -25,3 +26,4 @@
     - reshaping data
     - adding / reducing complexity (amount of neurons, amount of layers, different activation functions in hidden layers, etc)
     - techniques like early stopping and similar
+---

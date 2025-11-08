@@ -5,7 +5,7 @@ Resource | Type | Time | About | Watched/Read
 [(YT COURSE) Data Structures - Full Course Using C and C++](https://www.youtube.com/watch?v=B31LgI4Y4DQ&list=PLNkeEJ-A8bAem3jPktBpoWMjRACCEK7t1&index=71) | Youtube Course | 10h | Data structures explained and implemented in C | ❌
 📚[Big-O cheatsheet with visualisation](https://www.bigocheatsheet.com/) | Website | - | Time complexities visualised | -
 🌐[Calculating Boyer Moore Bad Character Table with examples](https://medium.com/@sula.ranawake/calculating-boyer-moore-bad-character-table-with-examples-d855e04d5bd8) | Web tutorial | - | Self explanatory | ✅
----
+
 ### ANDROID STUDIO
 Resource | Type | Time | About | Watched/Read
 :-- | :--: | :--: | :--: | :--:

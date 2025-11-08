@@ -16,7 +16,7 @@
 </div>
   <ul>
     <li>Each topic folder contains a README file with all useful links on covered topics </li>
-    <li>Images are created by me in Figma (imgs folder)</li>
+    <li>Images are either created by me in Figma or taken from tutorials (imgs folder)</li>
     <li>its mostly ponglish :p</li>
     <li>Tags meaning:
       <ul> 

@@ -6,6 +6,7 @@ Resource | Type | Time | About | Watched/Read
 ### MACHINE LEARNING
 Resource | Type | Time | About | Watched/Read 
 :-- | :--: | :--: | :--: | :--:
+🎬[(YT COURSE) Great channel on ML with visual explanations and code!!](https://youtube.com/playlist?list=PLLTSM0eKjC2cSNGs87NyD3Q22t_qBEROY&si=b4Q5nfQvpJvLKzD8) | Youtube Course | 7h | Self explanatory | 🔄
 🎬[(YT COURSE) PyTorch for Deep Learning](https://youtu.be/V_xro1bcAuA?si=agV7-F-Bu8SRVNMc) | Youtube Course | 25h | All PyTorch topics covered | 🔄
 🎬[(YT) Amazing channel on machine learning and math](https://www.youtube.com/@3blue1brown) | Youtube Channel | - | Visual explanation of difficult math concepts | -
 📚[(POLISH) Best explanations for complex topics with visualisations](https://miroslawmamczur.pl/spis-tresci/) | Blog | - | Theory and code explanation | -
