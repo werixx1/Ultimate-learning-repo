@@ -9,7 +9,7 @@
 <img src="/imgs/audio_an.gif" alt="audio vis" width="100" height="50" align="center">
 </p>
 -->
-<h3 align="center">ULTIMATE-LEARNING-REPO</h3>
+<h3 align="center">Learning Archive</h3>
   <p align="center">
     Basically a placeholder for my notes on compsci / tech topics that interest me and I want to pursue with resources to tutorials, courses, lectures etc to keep track on them:)
   </p>
@@ -40,4 +40,6 @@
 ### Todo
 - [x] link names and division for topics in resources
 - [x] KMP algo
+- [x] better files structure
+- [x] better notes structure, make template
 - [ ] upload files from previous years

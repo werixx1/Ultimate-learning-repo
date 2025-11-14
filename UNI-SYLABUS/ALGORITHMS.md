@@ -1,12 +1,42 @@
+<h3 align="center">Algorithms and data structures</h3>
 
----
-# LAB 2 
----
-#### KMP algorithm
-Explanation and examples:
-![alt text](../imgs/ALG_2.png)
+  <p align="center">
+    Notes on algorithms, data structures and time complexity
+    <br>
+    <a href="">Resources</a>
+    ·
+    <a href="">Main</a>
+  </p>
+</p>
 
-Calculating LPS array:
+
+## Table of contents
+
+- [Pattern searching algorithms](#pattern-searching-algorithms)
+    - [KMP algorithm](#kmp-algorithm)
+    - [Boyer Moore Algorithm](#boyer-moore-algorithm)
+    - [Rabin-Karp Algorithm](#rabin-karp-algorithm)
+- [Time complexity]()
+
+
+## Pattern searching algorithms
+> Algorithms designed to efficiently find a particular pattern within a larger set of data (example: used when pressing CTRL + F on PDFs)
+
+`Year 3, Semester 1` 
+Notes heavy based on Geeksforgeeks resources, so credits to them:)
+
+### KMP algorithm
+**Definition**
+Uses Longest Prefix Suffix array that stores, for every position in the pattern, the length of the longest proper prefix which is also a suffix of the **substring** ending at that position
+- It helps the KMP algorithm determine how much to **shift** the pattern when a mismatch occurs, without rechecking matched characters
+- Time complexity: **O(n + m)** 
+    - O(m) for creating LPS array, O(n) for searching through the text 
+
+| Overview |
+| -------- |
+| ![alt text](/resources/imgs/ALG_2.png) |
+
+**Code for calculating LPS array:**
 ```python
 def computeLPSArray(pattern):
     n = len(pattern)
@@ -49,11 +79,12 @@ Example 3 - [0, 0, 0, 0, 0, 1, 2, 3, 0, 0, 1, 2, 3]
 Example 4 - [0, 0, 0, 0, 1]
 # etc
 ```
-Example step by step:
 
-![alt text](../imgs/ALG_3.png)
+| Example step by step |
+| -------- |
+| ![alt text](/resources/imgs/ALG_3.png) |
 
-KMP algorithm:
+**Simple code for KMP algorithm:**
 ```python
 def search(text, pattern):
     ps = computeLPSArray(pattern)
@@ -73,22 +104,39 @@ def search(text, pattern):
             print(i - j)
             j = ps[j - 1]
 ```
----
-# LAB_3
----
-#### Boyer Moore
-Overview:
-![alt text](../imgs/ALG_4.png)
- ```Value(T) = max (1, 4–3–1) = max (1, 0) = 1 <= update the T value <= Rightmost occurrence of T```
- >"*If the same character repeats, update the table by the values from the new character (or simply consider the rightmost occurrence of the character in the pattern and calculate the value for it)*"
- - jak znak pojawia się poźniej jeszcze raz we wzorcu to wzór na tablice to L($) = max{1, m - **index_gdzie_znowu_sie_pojawia** -1}
- np. dla **T**EST to L(**T**) = max{1, 4-3-1} = 1
- ![alt text](../imgs/ALG_5.jpg)
- (I = 1)
 
----
-# LAB 4
----
-#### Rabin-Karp Algorithm
-Overview:
-![alt text](../imgs/ALG_6.png)
+
+### Boyer Moore Algorithm
+**Definition**
+Also preprocesses the pattern, but this time using **Bad Character Heuristic** (or **Good Suffix Heuristic**)
+- The character of the text which doesn’t match with the current character of the pattern is called the Bad Character. Upon mismatch, we shift the pattern until: 
+    - the mismatch becomes a match
+    - pattern P moves past the mismatched character
+- Time complexity: **O(m*n)** (worst case) **O(n/m)** (best case)
+    - worst case: all characters of the text and pattern are same
+    ` txt[] = "AAAAAAAAAAAAAAAAAA" pat[] = "AAAAA"`
+    - best case: all the characters of the text and pattern are different
+
+| Overview |
+| -------- |
+| ![alt text](/resources/imgs/ALG_4.png) |
+
+ `Value(T) = max (1, 4–3–1) = max (1, 0) = 1 <= update the T value <= Rightmost occurrence of T`
+ "*If the same character repeats, update the table by the values from the new character (or simply consider the rightmost occurrence of the character in the pattern and calculate the value for it)*"
+ - jak znak pojawia się poźniej jeszcze raz we wzorcu to wzór na tablice to L($) = max{1, m - **index_gdzie_znowu_sie_pojawia** -1}
+ np. dla **T**EST to L(**T**) = max{1, 4-3-1} = **1**
+ <!-- todo: smaller img with html pls -->
+ ![alt text](/resources/imgs/ALG_5.jpg)
+ (powinno być I = 1) 
+
+### Rabin-Karp Algorithm
+**Definition**
+Speed up pattern matching using **hashing** techniques, instead of comparing characters one by one, it converts the **strings into numbers** (hashes) and compares those
+- uses rolling hash to find all occurrences of a pattern in a text
+- best for huuuge texts
+- Time Complexity: **O(n)**
+    - the substring hash is retrieved in O(1) time
+
+| Overview |
+| -------- |
+| ![alt text](/resources/imgs/ALG_6.png) |

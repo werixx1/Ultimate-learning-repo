@@ -6,3 +6,4 @@ Resource | Type | Time | About | Watched/Read
 🎬[(YT COURSE) MIT CNN youtube](https://www.youtube.com/watch?v=oGpzWAlP5p0) | Youtube Video | 1h | MIT explains CNNs | ❌
 🎬[CNNs explained simply](https://www.youtube.com/watch?v=m0fmBY4t5BI) | Youtube Video | 30min | Visualization of CNN processes | ✅
 🎬[How CNNs Work Deep Learning Tutorial ](https://www.youtube.com/watch?v=Jy9-aGMB_TE&t=3s) | Youtube Course | 1h | Visualization + Code | ❌
+[Deep Learning Vision Architectures Explained – Python Course on CNNs and Vision Transformers](https://www.youtube.com/watch?v=tfpGS_doPvY)| Youtube Course | 5h | Conceptual course on deep learning vision models | ❌

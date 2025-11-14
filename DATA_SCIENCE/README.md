@@ -25,3 +25,9 @@ Resource | Type | Time | About | Watched/Read
 🌐[(WEB COURSE) Statistic and probability](https://www.khanacademy.org/math/statistics-probability) | Web Course | - | Khan Academy course on statistics | ❌
 🎬[Autocorrelation vs Partial autocorrelation](https://www.youtube.com/watch?v=DeORzP0go5I&t=10s) | Youtube Video | 15min | Great visual explanation on ACF and PACF | ✅
 
+### SQL
+Resource | Type | Time | About | Watched/Read
+:-- | :--: | :--: | :--: | :--:
+🌐[SQL Murder Mystery](https://mystery.knightlab.com/) | Web game course | - | Fun way to learn SQL | ❌
+🎬[Harvard CS50’s Intro to Databases with SQL – Full University Course](https://www.youtube.com/watch?v=WXk7yDqsKxs&t=2sv)| Youtube Course | 11h | Harvard lecture on Databases | ❌
+
