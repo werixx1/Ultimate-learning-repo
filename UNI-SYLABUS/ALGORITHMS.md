@@ -23,6 +23,7 @@
 > Algorithms designed to efficiently find a particular pattern within a larger set of data (example: used when pressing CTRL + F on PDFs)
 
 `Year 3, Semester 1` 
+<br>
 Notes heavy based on Geeksforgeeks resources, so credits to them:)
 
 ### KMP algorithm
@@ -108,6 +109,7 @@ def search(text, pattern):
 
 ### Boyer Moore Algorithm
 **Definition**
+<br>
 Also preprocesses the pattern, but this time using **Bad Character Heuristic** (or **Good Suffix Heuristic**)
 - The character of the text which doesn’t match with the current character of the pattern is called the Bad Character. Upon mismatch, we shift the pattern until: 
     - the mismatch becomes a match
@@ -122,6 +124,7 @@ Also preprocesses the pattern, but this time using **Bad Character Heuristic** (
 | ![alt text](/resources/imgs/ALG_4.png) |
 
  `Value(T) = max (1, 4–3–1) = max (1, 0) = 1 <= update the T value <= Rightmost occurrence of T`
+ <br>
  "*If the same character repeats, update the table by the values from the new character (or simply consider the rightmost occurrence of the character in the pattern and calculate the value for it)*"
  - jak znak pojawia się poźniej jeszcze raz we wzorcu to wzór na tablice to L($) = max{1, m - **index_gdzie_znowu_sie_pojawia** -1}
  np. dla **T**EST to L(**T**) = max{1, 4-3-1} = **1**
@@ -131,6 +134,7 @@ Also preprocesses the pattern, but this time using **Bad Character Heuristic** (
 
 ### Rabin-Karp Algorithm
 **Definition**
+<br>
 Speed up pattern matching using **hashing** techniques, instead of comparing characters one by one, it converts the **strings into numbers** (hashes) and compares those
 - uses rolling hash to find all occurrences of a pattern in a text
 - best for huuuge texts

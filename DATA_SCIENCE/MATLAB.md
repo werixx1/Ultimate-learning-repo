@@ -1,17 +1,36 @@
-#### Functions for preparing data 
+<h3 align="center">MATLAB syntax cheatsheet</h3>
 
-1. Datastore = variable for storing multiple images
+  <p align="center">
+    Data preparing, machine learning, enviroment setup
+    <br>
+    <a href="">Resources</a>
+    ·
+    <a href="">Main</a>
+  </p>
+</p>
+
+
+## Table of contents
+
+- [Functions for preparing data](#functions-for-preparing-data)
+- [Training a network from 'scratch'](#training-a-network-from-scratch)
+    - [Setup for Experiment manager](#setup-for-experiment-manager)
+    - [Steps for training a CNN network](#steps-for-training-a-cnn-network)
+
+## Functions for EDA / data preprocessing 
+> Particually for training CNN
+
+- **Datastore** = variable for storing multiple images
 ```matlab
 imgs_datastore = imageDatastore(path_to_images, "IncludeSubfolders", true, 
 "LabelSource", "foldernames") % use folder names as labels of classes
 ```
-
-2. Displaying images from a datastore
+- **Displaying images** from a datastore
 ```matlab
 montage(imgs_datastore)
 ```
 
-3. Imread(), imshow() - reading a single image file as variable and displaying it
+- **Imread(), imshow()** - reading a single image file as variable and displaying it
 ```matlab
 img = imread("example.jpg")
 imshow(img)
@@ -19,12 +38,11 @@ imshow(img)
 % based on the minimum and maximum values present in the image.
 % imshow(im,[])
 ```
-
-4. Extract image's first channel (make img gray)
+- Extract image's **first channel** (make img gray)
 ```matlab
 image(:,:,n) % n - channel value, 1 2 3
 ```
-4. Using kernel with image (kernel as a matrix)
+- Using **kernel** with image (kernel as a matrix)
 ```matlab
 filtered_image = conv2(kernel, image)
 % ex kernel = [ 0 1 0, 1 -4 1, 0 1 0] - blur
@@ -32,63 +50,68 @@ imshow(filtered_image, [])
 % for RGB image (all channels present)
 filtered_image = imfilter(image, kernel)
 ```
-
-
-3. Spliting data into train / test:
+- Spliting data into **train / test**:
 ```matlab 
 [train_df, test_ds] = splitEachLabel(imgs_datastore, proportion) % ex. 0.7 will 
 % give 70/30 split
 ```
-4. Data augmentation:
+- Data **augmentation**:
 ```matlab
 augmented_ds = augmentedImageDatastore([size size], ds, augmentation_type)
 ```
-5. Adjust learning options
+- Adjusting **learning options**
 ```matlab
 options = trainingOptions("algorithm_name", "InitialLearnRate", learn_value)
 % ex. "adam" 0.0001
 ```
-
-6. Return the number of non zero matrix elements (usefull when calculating accuracy)
+- Return the number of non zero matrix elements (usefull when calculating **accuracy**)
 ```matlab
 N = nnz(matrix)
 % for accuracy
 accuracy = nnz(test_data.Labels == predicted_labels) / length_of_data
 ```
-7. Confusion matrix
+- **Confusion matrix**
 ```matlab
 confusionchart(known_labels, predicted_labels)
 ```
-
-5. Predicting values:
+- **Predicting** values:
 ```matlab
 minibatchpredict
 ```
-
-Conv layer extract certain patterns (features), usually each conv layer in a bigger network has a different filter for detecting different things like ex. hertical edges, horizontal edges, whites etc
-
----
-
-#### Training a network from 'scratch' (by matlab standards)
-[ Setup for Experiment manager .mat (Setup Function) ] 
+- Inserting object **box annotation** 
+```matlab
+img_with_box = insertObjectAnnotation(image,...
+"rectangle",box_coordinates,label)
+% create a datastore of box labels
+ds_of_boxes = boxLabelDatastore(table)
+```
+![alt text](/resources/imgs/MATLAB_3.png)
+(labels for these objects here are 4 and 6, but usually would be categories names)
+## Training a network from 'scratch' 
+Example with training a simple CNN for image classification
+### Setup for Experiment manager 
+**.mat (Setup Function)**
 - In Expirement Manager:
-![matlab_1](../imgs/MATLAB_1.png)
-^generates a script to define training data, layers and training options
+![matlab_1](/resources/imgs/MATLAB_1.png)
+    - ^Generates a script to define training data, layers and training options
 - Adjusting hyperparameters:
-![matlab_2](../imgs/MATLAB_2.png)
-And call them in setup by:
+![matlab_2](/resources/imgs/MATLAB_2.png)
+- And to call them in workspace (to view or change) type:
     ```matlab
     params.myInitialLearnRate
     params.myEpochs
     ```
----
-1. Function that loads defined params into training (it generated automatically)
+### Steps for training a CNN network
+Function that loads defined params into training 
+> Simplified steps, assuming data is already preprocessed and labeled
+
+(It's generated automatically after setting up everything in Experiment manager)
 ```matlab
 function [xTrain,yTrain,layers,options] =
 Expirement_setup1(params) % has all parameters from below
 % to load into experiment manager ? i think ?
 ```
-2. Loading training data (expecting its already divided into train/test):
+- **Load** training data (expecting its already divided into train/test):
 ```matlab
 data = load("file_name.mat");
 yTrain = data.yTrain;
@@ -103,7 +126,7 @@ xTest = reshape(data.xTest, 28,28,1, numel(yTest));
 ```matlab
 idx = splitlabels(labels,[0.9,0.05]) % train test val split
 ```
-3. Defining network architecture
+- Define network **architecture**
 ```matlab
 layers = [
 imageInputLayer([28 28 1])
@@ -113,7 +136,7 @@ reluLayer
 % etc
 ]
 ```
-4. Specyfying training options
+- Specyfy **training options**
 ```matlab
 options = trainingOptions("adam", ...
 "InitialLearnRate",params.myInitialLearnRate,...
@@ -124,28 +147,3 @@ options = trainingOptions("adam", ...
 "Verbose",false);
 end
 ```
----
-- Inserting object box annotation (images detecting)
-    ```matlab
-    img_with_box = insertObjectAnnotation(image,...
-    "rectangle",box_coordinates,label)
-    % create a datastore of box labels
-    ds_of_boxes = boxLabelDatastore(table)
-    ```
-    ![alt text](../imgs/MATLAB_3.png)
-    (labels are 4 and 6)
-
-- Using function as a parameter to another function
-    ```matlab
-    @function % use function in a function as a parameter
-    ```
-- Signal data
-    ```matlab
-    sigds = signalDatastore("file_path", "IncludeSubfolders",true, ...
-    "SignalVariableNames", varnames, ...
-    "ReadOutputOrientation", "row") % datastore storing signal data
-    labels = folders2labels("folder_name"); % categorical vector
-    summary(labels); % get how many examples of each label there are
-    % ??
-    lbls = renamecats(lbls,["class1" "class2"])
-    ```

@@ -1,5 +1,5 @@
 "You count **discrete** data. You measure **continuous** data"
-![data-type](../imgs/RANDOM_1.png)
+![data-type](/resources/imgs/RANDOM_1.png)
 
 --- 
 ### ML pipeline:

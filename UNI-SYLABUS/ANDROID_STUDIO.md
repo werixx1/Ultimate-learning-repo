@@ -36,6 +36,7 @@
 
 ## Common functions
 **Definition**
+<br>
 Most commonlt used functions, setting up GUI, looking up project resources, intents sending informations between each others, handling buttons etc:)
 ### Java
 - **setContentView(R.layout.xml_file_name)** 
