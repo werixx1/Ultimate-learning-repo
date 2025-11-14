@@ -10,17 +10,16 @@
 </p>
 
 
-
 - **enumerate** (*iterable*)
    - adds a **counter** (index, starting from 0) to each item in a list or any other iterable [usefull when indexing through dictionares and needing locations of certain keys]
-<br>
-In:
-```python
-my_list = ['var1', 'var2', 'var3']
 
-for index, var in enumerate(my_list):
-print(f'index {i} : {var}')
-```
+   In:
+   ```python
+   my_list = ['var1', 'var2', 'var3']
+
+   for index, var in enumerate(my_list):
+   print(f'index {i} : {var}')
+   ```
 Out:
 ```python
 index 0: var1
@@ -33,10 +32,9 @@ for i, (k, v) in enumerate(example_dict.items()):
       print(i, k, v)
 ```
 
-      <br>
 - **islice()** 
    - returns only certain nums of values from dictionary (slices it)
-<br>  
+
 In:
 ```python
 from itertools import islice  
@@ -50,7 +48,6 @@ Out:
 ```python
 {'a': 1, 'b': 2}
 ```
-<br>
 
 - **Skip** a certain value while iterating using **range()** function
    - ex. print anything but 50
