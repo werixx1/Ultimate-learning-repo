@@ -1,8 +1,5 @@
 <!--
 <p align="center">
-<img src="imgs/album_cover.png" alt="album cover" width="70" height="70" align="center">
-</p>
-<p align="center">
 <span>&nbsp;<a href="https://open.spotify.com/track/2fjp9VUrb0I5I1t2fNOrUt?si=4926207f12dd4062"><b>Grimes</b> - 4ÆM</span></a>
 </p>
 <p align="center">
@@ -27,6 +24,7 @@
 </ul> 
 
 
+<!-- [![Youtube Video](https://github.com/user-attachments/assets/bf505b24-bd90-4d7a-97dc-2e1fee267a6e)](https://www.youtube.com/watch?v=HD5YaDOctx4) -->
 <!--
 <h3 align="center">Interests overlap chart</h3>
 
